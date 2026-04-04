@@ -8,7 +8,7 @@
 body {
   font-family: 'Inter', sans-serif;
   background-color: #f4f6f8;
-  color: #7106f4;
+  color: #060606;
   line-height: 1.6;
   padding: 0 20px;
 }
@@ -42,7 +42,7 @@ header p {
   display: flex;
   justify-content: center;
   gap: 20px;
-  background-color: #1a1a1a;
+  background-color: #7700ff;
   padding: 10px 0;
 }
 
