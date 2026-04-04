@@ -42,18 +42,23 @@ header p {
   display: flex;
   justify-content: center;
   gap: 20px;
-  background-color: #7700ff;
   padding: 10px 0;
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* совпадает с хедером */
+  border-radius: 10px; /* закругление углов */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* лёгкая тень */
 }
 
 .navbar a {
-  color: #ffffff;
+  color: #ffffff; /* белый текст */
   font-weight: 600;
-  transition: color 0.3s;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .navbar a:hover {
-  color: #ff7f50;
+  background-color: rgba(255, 255, 255, 0.2); /* лёгкий подсвет при наведении */
+  color: #ffefc1; /* мягкий контрастный цвет */
 }
 
 /* ===================== СЕКЦИИ ===================== */
