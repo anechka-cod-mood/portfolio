@@ -1,4 +1,4 @@
-/* Общие стили */
+/* ===================== Общие стили ===================== */
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +13,11 @@ body {
   padding: 0 20px;
 }
 
-/* HEADER */
+a {
+  text-decoration: none;
+}
+
+/* ===================== HEADER ===================== */
 header {
   text-align: center;
   padding: 50px 20px;
@@ -33,7 +37,26 @@ header p {
   opacity: 0.9;
 }
 
-/* SECTIONS */
+/* ===================== НАВИГАЦИЯ ===================== */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #1a1a1a;
+  padding: 10px 0;
+}
+
+.navbar a {
+  color: #ffffff;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ff7f50;
+}
+
+/* ===================== СЕКЦИИ ===================== */
 section {
   margin-bottom: 60px;
 }
@@ -45,18 +68,19 @@ h2 {
   color: #2575fc;
 }
 
-/* PROJECTS */
+/* ===================== ПРОЕКТЫ ===================== */
 .project {
   background-color: white;
   padding: 20px;
   margin-bottom: 30px;
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 .project h3 {
@@ -70,17 +94,17 @@ h2 {
 }
 
 .project a {
-  text-decoration: none;
   color: #2575fc;
   font-weight: 600;
   margin-right: 15px;
+  transition: color 0.3s;
 }
 
 .project a:hover {
   text-decoration: underline;
 }
 
-/* SCREENSHOTS */
+/* ===================== СКРИНШОТЫ ===================== */
 .screenshots {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -99,9 +123,10 @@ h2 {
 .screenshot img {
   width: 100%;
   height: auto;
+  max-width: 220px;
   border-radius: 8px;
   object-fit: cover;
-  margin-top: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .screenshot:hover {
@@ -109,7 +134,12 @@ h2 {
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-/* SKILLS */
+.screenshot img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* ===================== НАВЫКИ ===================== */
 .skills-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -142,20 +172,59 @@ h2 {
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-/* RESPONSIVE */
+/* ===================== ПЛАВНЫЙ СКРОЛЛ ===================== */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===================== FOOTER (КОНТАКТЫ) ===================== */
+footer {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 30px 20px 15px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 15px;
+}
+
+.footer-contact h3 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #ff7f50;
+}
+
+.footer-contact a {
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer-contact a:hover {
+  color: #ff7f50;
+}
+
+.footer-bottom {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+/* ===================== RESPONSIVE ===================== */
 @media (max-width: 768px) {
   header h1 {
     font-size: 2rem;
   }
-
   header p {
     font-size: 1rem;
   }
-
   .project {
     padding: 15px;
   }
-
   .skill-card ul {
     padding-left: 15px;
   }
@@ -165,116 +234,14 @@ h2 {
   header h1 {
     font-size: 1.7rem;
   }
-
   h2 {
     font-size: 1.5rem;
   }
-
   .screenshots {
     grid-template-columns: 1fr;
   }
-}
-
-/* CONTACTS */
-#contacts {
-  margin-bottom: 60px;
-}
-
-#contacts h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  color: #2575fc;
-}
-
-.contact-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 25px;
-  justify-items: center;
-}
-
-.contact-card {
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.contact-card h3 {
-  color: #6a11cb;
-  margin-bottom: 10px;
-}
-
-.contact-card p a {
-  text-decoration: none;
-  color: #2575fc;
-  font-weight: 600;
-}
-
-.contact-card p a:hover {
-  text-decoration: underline;
-}
-
-.contact-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-}
-
-/* RESPONSIVE */
-@media (max-width: 480px) {
-  .contact-cards {
-    grid-template-columns: 1fr;
+  .footer-container {
+    flex-direction: column;
+    gap: 15px;
   }
 }
-
-/* Плавный скролл */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Навигация */
-.navbar {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  background-color: #1a1a1a;
-  padding: 10px 0;
-}
-
-.navbar a {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s;
-}
-
-.navbar a:hover {
-  color: #ff7f50;
-}
-
-/* Анимация проектов и контактов */
-.project, .contact-info {
-  transition: transform 0.3s, box-shadow 0.3s;
-  border-radius: 10px;
-}
-
-.project:hover, .contact-info:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* Скриншоты */
-.screenshots .screenshot img {
-  width: 100%;
-  max-width: 220px;
-  border-radius: 8px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.screenshots .screenshot img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-}
-
