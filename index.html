@@ -5,92 +5,112 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Портфолио Ани Кондратьевой</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- HEADER -->
   <header>
     <h1>Аня Кондратьева</h1>
     <p>Студентка 4 курса, фронтенд-разработка и UI/UX дизайн</p>
   </header>
 
+  <!-- PROJECTS -->
   <section id="projects">
     <h2>Проекты</h2>
 
+    <!-- Book Shop -->
     <div class="project">
-        <h3>Book Shop (React, TypeScript)</h3>
-        <p>Информационная система для книжного магазина с фильтрацией товаров по цене.</p>
-        <ul>
-            <li>Разработала пользовательский интерфейс и админ-панель</li>
-            <li>Реализовала фильтрацию товаров по цене</li>
-            <li>Использовала TypeScript для надёжного кода</li>
-        </ul>
-        <p>Технологии: React, TypeScript, CSS</p>
-        <p>
-            <a href="https://github.com/anechka-cod-mood/book-shop" target="_blank">GitHub</a> | 
-            <a href="https://book-shop-pink-seven.vercel.app" target="_blank">Деплой</a>
-        </p>
-  
-        <!-- Скриншоты Book Shop -->
-        <div class="screenshots">
-            <p>Страница авторизации </p>
-            <img src="images/BSlogin.png" alt="Book Shop Login" width="200">
-            
-            <p>Страница каталога</p>
-            <img src="images/BSkatalog.png" alt="Book Shop Catalog" width="200">
+      <h3>Book Shop (React, TypeScript)</h3>
+      <p>Информационная система для книжного магазина с фильтрацией товаров по цене.</p>
+      <ul>
+        <li>Разработала пользовательский интерфейс и админ-панель</li>
+        <li>Реализовала фильтрацию товаров по цене</li>
+        <li>Использовала TypeScript для надёжного кода</li>
+      </ul>
+      <p>Технологии: React, TypeScript, CSS</p>
+      <p>
+        <a href="https://github.com/anechka-cod-mood/book-shop" target="_blank">GitHub</a> | 
+        <a href="https://book-shop-pink-seven.vercel.app" target="_blank">Деплой</a>
+      </p>
 
-            <p>Страница изранных таваров</p>
-            <img src="images/BScart.png" alt="Book Shop Cart" width="200">
-
-            <p>Страница корзины</p>
-            <img src="images/BScart.png" alt="Book Shop Cart" width="200">
-
-            <p>Страница админ-панели</p>
-            <img src="images/BSadmin.png" alt="Book Shop Admin" width="200">
-            
-            <p>Страница аналитики и отчетности</p>
-            <img src="images/BSanalit.png" alt="Book Shop Analytics" width="200">
-
-            <p>Страница Менеднера</p>
-            <img src="images/BSmenage.png" alt="Book Shop Manage" width="200">
-
-            <p>Страница личного кабинета</p>
-            <img src="images/BSperson.png" alt="Book Shop User" width="200">
+      <div class="screenshots">
+        <div class="screenshot">
+          <p>Страница авторизации</p>
+          <img src="images/BSlogin.png" alt="Book Shop Login">
         </div>
+        <div class="screenshot">
+          <p>Страница каталога</p>
+          <img src="images/BSkatalog.png" alt="Book Shop Catalog">
+        </div>
+        <div class="screenshot">
+          <p>Страница избранных товаров</p>
+          <img src="images/BScart.png" alt="Book Shop Favorites">
+        </div>
+        <div class="screenshot">
+          <p>Страница корзины</p>
+          <img src="images/BScart.png" alt="Book Shop Cart">
+        </div>
+        <div class="screenshot">
+          <p>Страница админ-панели</p>
+          <img src="images/BSadmin.png" alt="Book Shop Admin">
+        </div>
+        <div class="screenshot">
+          <p>Страница аналитики</p>
+          <img src="images/BSanalit.png" alt="Book Shop Analytics">
+        </div>
+        <div class="screenshot">
+          <p>Страница менеджера</p>
+          <img src="images/BSmenage.png" alt="Book Shop Manager">
+        </div>
+        <div class="screenshot">
+          <p>Страница личного кабинета</p>
+          <img src="images/BSperson.png" alt="Book Shop User">
+        </div>
+      </div>
     </div>
-    
-        <div class="project">
-            <h3>Note Board (React, TypeScript)</h3>
-            <p>Мини-приложение для создания и редактирования заметок с поддержкой темной темы.</p>
-            <ul>
-                <li>Разработала пользовательский интерфейс</li>
-                <li>Добавила функционал темной темы</li>
-                <li>Использовала LocalStorage для хранения данных</li>
-            </ul>
-            <p>Технологии: React, TypeScript, CSS Grid, LocalStorage</p>
-            <p>
-                <a href="https://github.com/anechka-cod-mood/my-noteboard-app.git" target="_blank">GitHub</a> | 
-                <a href="https://my-noteboard-app.vercel.app/" target="_blank">Деплой</a>
-            </p>
-            
-            <!-- Скриншоты Note Board -->
-            <div class="screenshots">
-                <p>Темная тема</p>
-                <img src="images/dark.png" alt="Note Board Dark Theme" width="200">
 
-                <p>Редактирование заметки</p>
-                <img src="images/editNote.png" alt="Note Board Edit Note" width="200">
+    <!-- Note Board -->
+    <div class="project">
+      <h3>Note Board (React, TypeScript)</h3>
+      <p>Мини-приложение для создания и редактирования заметок с поддержкой темной темы.</p>
+      <ul>
+        <li>Разработала пользовательский интерфейс</li>
+        <li>Добавила функционал темной темы</li>
+        <li>Использовала LocalStorage для хранения данных</li>
+      </ul>
+      <p>Технологии: React, TypeScript, CSS Grid, LocalStorage</p>
+      <p>
+        <a href="https://github.com/anechka-cod-mood/my-noteboard-app.git" target="_blank">GitHub</a> | 
+        <a href="https://my-noteboard-app.vercel.app/" target="_blank">Деплой</a>
+      </p>
 
-                <p>Страница входа</p>
-                <img src="images/login.png" alt="Note Board Login" width="200">
-
-                <p>Меню приложения</p>
-                <img src="images/menu.png" alt="Note Board Menu" width="200">
-
-                <p>Создание новой заметки</p>
-                <img src="images/newNote.png" alt="Note Board New Note" width="200">
-            </div>
+      <div class="screenshots">
+        <div class="screenshot">
+          <p>Темная тема</p>
+          <img src="images/dark.png" alt="Note Board Dark Theme">
         </div>
+        <div class="screenshot">
+          <p>Редактирование заметки</p>
+          <img src="images/editNote.png" alt="Note Board Edit Note">
+        </div>
+        <div class="screenshot">
+          <p>Страница входа</p>
+          <img src="images/login.png" alt="Note Board Login">
+        </div>
+        <div class="screenshot">
+          <p>Меню приложения</p>
+          <img src="images/menu.png" alt="Note Board Menu">
+        </div>
+        <div class="screenshot">
+          <p>Создание новой заметки</p>
+          <img src="images/newNote.png" alt="Note Board New Note">
+        </div>
+      </div>
+    </div>
+
   </section>
 
+  <!-- SKILLS -->
   <section id="skills">
     <h2>Навыки</h2>
     <p>React, TypeScript, CSS, Figma, LocalStorage</p>
